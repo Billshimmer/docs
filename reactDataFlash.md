@@ -45,6 +45,6 @@ redux<br/>
 ### 参考文章和技术blog
 
 #### [Redux 还是 Mobx](https://segmentfault.com/a/1190000011148981)
-#### [Fulx vs Redux vs MobX](http://zhenhua-lee.github.io/react/state-manage.html)
+#### [Flux vs Redux vs MobX](http://zhenhua-lee.github.io/react/state-manage.html)
 #### [Rudexer使用Mobx的初体验](https://medium.com/@adamrackis/a-redux-enthusiast-tries-mobx-af675f468c11)
 
