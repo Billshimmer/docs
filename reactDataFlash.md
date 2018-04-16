@@ -42,7 +42,7 @@ redux<br/>
 ### mobx
 >![avater](http://yun.dui88.com/A3E82219-F611-4435-80BA-6B7150B33C28.png)
 
-### 参考文章和技术blog
+### 参考文章和技术blog
 
 #### [Redux 还是 Mobx](https://segmentfault.com/a/1190000011148981)
 #### [Fulx vs Redux vs MobX](http://zhenhua-lee.github.io/react/state-manage.html)
