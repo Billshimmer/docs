@@ -15,7 +15,7 @@ redux<br/>
 
 >   两个框架都把将数据从单纯的components state中剥离出来，形成独立的store来管理。
 
->   框架都提供了单独的actions封装帮助管理store的更新机制。
+>   框架都提供了单独的actions封装来帮助管理store的更新机制。
 
 >   组件通过观察者模式来通知数据的更新，通过store的接口来获取当前数据。
 
