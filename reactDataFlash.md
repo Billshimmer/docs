@@ -33,7 +33,7 @@ redux<br/>
 > 从上述的各种差同来看，redux管理数据更加中心化，数据管理可读性更高，提倡的是函数式变成和不可变数据源,所以我们在代码编写上有更多的开发量;mobx的概念很简单易懂，只需要独立出store，将自己的数据改变动作包装成actions, 整体设计是响应式。
 
 
-## 回归代码理解redux和mobx
+## 回归实践代码理解redux和mobx
 
 ### redux
 >![avater](http://yun.dui88.com/F4C81935-034F-4660-A25A-1A4739CDFA17.png)
@@ -42,4 +42,8 @@ redux<br/>
 
 ### mobx
 >![avater](http://yun.dui88.com/A3E82219-F611-4435-80BA-6B7150B33C28.png)
+
+
+
+
 
