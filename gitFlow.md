@@ -4,6 +4,9 @@
 
 > git是当前最流行的代码管理工具，作为分布式的开源版本管理系统。
 
+## 本地 && 远端
+
+> 由于git是分布式的,客户端和服务端可以同步所有的备份和代码;
 ## 文件状态和状态转移
 > ![avater](https://git-scm.com/book/en/v2/images/lifecycle.png
 )
@@ -32,3 +35,7 @@ git checkout -b feature/bjh-0410-0417-审核流程优化
 
 
 ## 警报
+
+> gitlab平台上的操作
+
+> merge代码的时候出现了冲突
