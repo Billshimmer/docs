@@ -4,11 +4,11 @@
 
 > git是当前最流行的代码管理工具，作为分布式的开源版本管理系统。
 
-## 本地 && 远端
+## 本地 && 远端
 
 > 由于git是分布式的,客户端和服务端可以同步所有的备份和代码。
-> 作为一个文件管理系统，例如文件状态管理和分支管理都是本地客户端的操作(everything-is-local);
-> 在pull push fetch等等命令的协同下，我们可以使本地和远端的代码得到同步。
+> 作为一个文件管理系统，例如文件状态管理和分支管理都是本地客户端的操作(everything-is-local);
+> 在pull push fetch等等命令的协同下，我们可以使本地和远端的代码得到同步。
 ## 文件状态和状态转移
 > ![avater](https://git-scm.com/book/en/v2/images/lifecycle.png
 )
@@ -20,7 +20,7 @@ On branch master
 Your branch is up-to-date with 'origin/master'.
 nothing to commit, working directory clean
 ```
-#### 添加了一个未被跟踪的新文件
+#### 添加了一个未被跟踪的新文件
 ```
 $ git status
 On branch master
@@ -46,7 +46,7 @@ Changes to be committed:
 
     new file:   README
 ```
-#### 文件改动被提交到staged区
+#### 文件改动被提交到staged区
 ```
 $ git commit -m "Story 182: Fix benchmarks for speed"
 [master 463dc4f] Story 182: Fix benchmarks for speed
@@ -56,7 +56,7 @@ $ git commit -m "Story 182: Fix benchmarks for speed"
 
 ## 分支管理和操作
 
-> git的分支功能是核心功能，大型项目多人协同开发的场景下，就需要依赖分支管理来实现并行开发和功能管理。
+> git的分支功能是核心功能，大型项目多人协同开发的场景下，就需要依赖分支管理来实现并行开发和功能管理。
 
 #### 查看分支
 ```
@@ -90,14 +90,14 @@ If you are sure you want to delete it, run 'git branch -D testing'.
 
 ## 命名规范
 
-> git开发的命名主要针对commit、branch, 常见例子:
+> git开发的命名主要针对commit、branch,常见例子:
 
 ```
-当前改动添加并注释到staged区:$ git add . && git commit -m '添加文案显示和logo样式'
+当前改动添加并注释到staged区:$ git add . && git commit -m '添加文案显示和logo样式'
 ```
 
 ```
-本地切换分支:$ git checkout -b feature/bjh-0410-0417-审核流程优化
+本地切换分支:$ git checkout -b feature/bjh-0410-0417-审核流程优化
 ```
 
 
@@ -116,9 +116,9 @@ If you are sure you want to delete it, run 'git branch -D testing'.
 
 ## 警报
 
-> gitlab平台的merge request操作有可能会出现冲突，建议在本地解决，代码冲突双方都必须仔细阅读冲突代码，切勿个人解决合并。
+> gitlab平台的merge request操作有可能会出现冲突，建议在本地解决，代码冲突双方都必须仔细阅读冲突代码，切勿个人解决合并。
 
-> 如果你不慎在develop或者master分支上修改了代码，可以使用git stash将改动缓存起来,切换到功能分支后通过git stash pop命令获取到之前的改动
+> 如果你不慎在develop或者master分支上修改了代码，可以使用git stash将改动缓存起来,切换到功能分支后通过git stash pop命令获取到之前的改动
 
 ```
 $ git status
