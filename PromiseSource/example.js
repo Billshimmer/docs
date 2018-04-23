@@ -14,8 +14,8 @@ new Promise(function (resolve, reject) {
 
 ).then(
 
-).then(function () {
-
+).then(function (val) {
+  console.log(val)
 }).catch(function (error) {
   console.log(error)
 })

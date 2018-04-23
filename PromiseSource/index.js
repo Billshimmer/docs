@@ -28,7 +28,7 @@ var Promise = function (executor) {
 
       for (var i = 0; i < self.onResolvedCallbacks.length; i++) {
         var cb = self.onResolvedCallbacks[i];
-        cb();
+        setTimeout(cb, 0);
       }
     }
   }
@@ -41,7 +41,7 @@ var Promise = function (executor) {
 
       for (var i = 0; i < self.onRejectedCallbacks.length; i++) {
         var cb = self.onRejectedCallbacks[i];
-        cb();
+        setTimeout(cb, 0);
       }
     }
   }
@@ -49,8 +49,8 @@ var Promise = function (executor) {
 
 Promise.prototype.then = function (resolveFunc, rejectFunc) {
   var self = this;
-  var rsF = resolveFunc instanceof Function ? resolveFunc : function () { };
-  var rjF = rejectFunc instanceof Function ? rejectFunc : function () { }
+  var rsF = resolveFunc instanceof Function ? resolveFunc : function ( val ) { return val };
+  var rjF = rejectFunc instanceof Function ? rejectFunc : function (  ) { }
 
   var curStatus = self.status;
 
