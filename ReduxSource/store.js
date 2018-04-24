@@ -2,13 +2,13 @@ function checkInstance(vars, targetIntance) {
   return vars instanceof targetIntance;
 }
 
-function store() {
+function Store() {
   this.state = {};
   this.reducers = {};
   this.handlers = [];
 }
 
-store.prototype.getState = function () {
+Store.prototype.getState = function () {
   return this.state;
 }
 
@@ -16,7 +16,7 @@ store.prototype.getState = function () {
  *
  * @param {*} action
  */
-store.prototype.dispatch = function (action) {
+Store.prototype.dispatch = function (action) {
   for (key in this.reducers) {
     let reducer = this.reducers[key];
     let stateWithKey = this.state[key];
@@ -27,7 +27,7 @@ store.prototype.dispatch = function (action) {
   }
 }
 
-store.prototype.subscribe = function (listener) {
+Store.prototype.subscribe = function (listener) {
   if (!checkInstance(listener, Function)) {
     return;
   } else {
@@ -40,7 +40,7 @@ store.prototype.subscribe = function (listener) {
   }
 }
 
-store.prototype.unsubscribe = function (listener) {
+Store.prototype.unsubscribe = function (listener) {
   if (!checkInstance(listener, Function)) {
     return;
   }
@@ -51,8 +51,8 @@ store.prototype.unsubscribe = function (listener) {
   this.handlers.splice(offset, 1);
 }
 
-store.prototype.replaceReducer = function (nextReducer) {
+Store.prototype.replaceReducer = function (nextReducer) {
 
 }
 
-module.exports = store
+module.exports = Store
