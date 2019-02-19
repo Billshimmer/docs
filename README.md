@@ -2,7 +2,7 @@
 * **gitFlow**
   (git工作流应用、快捷方式)
 * **promise && PromiseSource**
-  (前端Promise源码分析、实践一个新的Promise)
+  (Promise源码分析、实践一个新的Promise)
 * **nodeFresh** 
   (node基本知识总结)
 
